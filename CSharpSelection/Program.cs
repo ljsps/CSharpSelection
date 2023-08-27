@@ -16,7 +16,7 @@ namespace CSharpSelection
 			SelectionExamples.ConditionalOperations(false, true);
 			Console.WriteLine();
 
-			Console.WriteLine("Check for valid Input");
+			Console.WriteLine("# Check for valid Input");
 			InputNumber();
 			Console.WriteLine();
 
@@ -31,6 +31,16 @@ namespace CSharpSelection
 			Console.WriteLine("# Determine tip with enum");
 			decimal tip2 = SelectionExamples.DetermineTip(SelectionExamples.ServiceLevel.Good);
 			Console.WriteLine($"The tip will be {tip2}\n");
+
+			Console.WriteLine("# Generating a random number");
+			RandomExample();
+		}
+
+		static void RandomExample()
+		{
+			Random random = new();
+			int num = random.Next(10);
+			Console.WriteLine($"Your random number is {num}\n");
 		}
 
 		static void InputNumber()
