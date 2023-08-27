@@ -31,7 +31,7 @@ namespace CSharpSelection
 			Console.WriteLine("# Determine tip with enum");
 			decimal tip2 = SelectionExamples.DetermineTip(SelectionExamples.ServiceLevel.Good);
 			Console.WriteLine($"The tip will be {tip2}\n");
-
+			
 			Console.WriteLine("# Generating a random number");
 			RandomExample();
 		}
